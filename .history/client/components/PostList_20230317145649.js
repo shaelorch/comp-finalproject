@@ -1,0 +1,16 @@
+import { useEffect } from "react"
+import { getPosts } from "../pages/services/posts"
+
+export function PostList() {
+
+    useEffect(() => {
+        getPosts().then(setPosts)
+    }, [])
+    return post.map(post => {
+        return (
+            <h1 key={post.id}>
+                <a href={`/posts/${post.id}`}>{post.title}</a>
+            </h1>
+        )
+    })
+}
