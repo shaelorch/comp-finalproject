@@ -1,5 +1,5 @@
 import { makeRequest } from "./makeRequest";
 
 export function getPosts() {
-    return makeRequest("/posts)
+    return makeRequest("http://localhost:3001/posts")
 }

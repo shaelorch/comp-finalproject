@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { PostList } from '../components/PostList'
 import styles from '../styles/Home.module.css'
+import { useAsync } from '../hooks/useAsync'
 
 export default function Home() {
   return (
@@ -13,7 +15,7 @@ export default function Home() {
 
       <main className={styles.main}>
         
-      Hello World
+     <PostList/>
         
       </main>
 
